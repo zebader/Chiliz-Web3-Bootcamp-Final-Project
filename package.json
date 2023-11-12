@@ -11,7 +11,11 @@
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.0.2"
+    "next": "14.0.2",
+    "@moralisweb3/next": "^2.23.1",
+    "moralis": "^2.23.1",
+    "viem": "^1.16.5",
+    "wagmi": "^1.4.3"
   },
   "devDependencies": {
     "typescript": "^5",
