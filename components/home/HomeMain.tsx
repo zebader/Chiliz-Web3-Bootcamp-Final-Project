@@ -1,13 +1,11 @@
 import { useBalances } from '@/hooks/useBalances';
 import { useWalletDetails } from '@/hooks/useWalletDetails';
 import { formatBalance } from '@/utils/formatBalance';
-import {BalanceCard} from "./BalaceCard"
+import {BalanceCard} from "./BalanceCard"
 import {ChainCard} from "./ChainCard"
 export const HomeMain = () => {
     const { message: tokenMessage, loading: tokenLoading, nativeBalance } = useBalances();
     const { message: walletMessage ,loading: walletLoading, walletDetails } = useWalletDetails();
-
-    console.log(walletDetails?.active_chains);
     
     return (
         <div className="flex max-w-5xl m-auto p-4">
@@ -18,11 +16,11 @@ export const HomeMain = () => {
                         tokenLoading || walletLoading ? <div>Loading information... </div>:
                             <div className="flex gap-4">
                                 <div>
-                                    <h2 className="text-sm text-white font-medium mb-4 text-slate-500">Native Balance</h2>
+                                    <h2 className="text-sm font-medium mb-4 text-slate-500">Native Balance</h2>
                                     <BalanceCard balance={formatBalance(nativeBalance?.balance)} />
                                 </div>
                                 <div>
-                                    <h2 className="text-sm text-white font-medium mb-4 text-slate-500">Active chains (mainnet)</h2>
+                                    <h2 className="text-sm font-medium mb-4 text-slate-500">Active chains (mainnet)</h2>
                                     <div>
                                         {walletDetails?.active_chains ? (
                                             walletDetails?.active_chains.map((chain) => {

@@ -15,7 +15,9 @@
     "@moralisweb3/next": "^2.23.1",
     "moralis": "^2.23.1",
     "viem": "^1.16.5",
-    "wagmi": "^1.4.3"
+    "wagmi": "^1.4.3",
+    "@thirdweb-dev/react": "^4.0.7",
+    "@thirdweb-dev/sdk": "^4.0.6"
   },
   "devDependencies": {
     "typescript": "^5",

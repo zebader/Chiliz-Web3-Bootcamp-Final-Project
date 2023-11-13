@@ -4,6 +4,7 @@ import {ClientOnly} from '@/hocs/ClientOnly';
 import { useAuth } from '@/hooks/useAuth';
 import {ReactNode, FC} from 'react';
 import {ConnectSuggestion}   from '@/components/ConnectSuggestion';
+import {NavBar}   from '@/components/NavBar';
 
 export const ClientOnlyWithGuard: FC<{ children: ReactNode }> = ({
     children,
@@ -12,7 +13,12 @@ export const ClientOnlyWithGuard: FC<{ children: ReactNode }> = ({
 
     return (
         <ClientOnly>
-            {isConnected ? children : <ConnectSuggestion/>}
+            {isConnected ? (
+                <>
+                    <NavBar/>
+                    {children}
+                </>
+                ) : <ConnectSuggestion/>}
         </ClientOnly>
     );
 };
