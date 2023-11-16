@@ -4,16 +4,17 @@ import { FC } from "react";
 type MetadataProps = {
     metadata: Metadata;
     title: string;
+    variant?: "active" | "inactive";
 };
 
-const ContractMetadata: FC<MetadataProps> = ({ metadata, title }) => {
+const ContractMetadata: FC<MetadataProps> = ({ metadata, title, variant = "active" }) => {
     return (
         <div>
             <h2 className="text-sm font-medium mb-4 text-slate-500">
                 {title}
             </h2>
 
-            <div className="bg-gray-800 rounded-lg p-4">
+            <div className={`${variant === "active" ? "bg-gray-800" : "bg-gray-950"} rounded-lg p-4`}>
                 {metadata.name && (
                     <div className="text-white text-md">
                         <span className="text-sm font-medium mb-4 text-slate-500">Name:</span> {metadata.name}
