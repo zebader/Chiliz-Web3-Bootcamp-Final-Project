@@ -8,7 +8,7 @@ export const HomeMain = () => {
     const { message: walletMessage ,loading: walletLoading, walletDetails } = useWalletDetails();
     
     return (
-        <div className="flex max-w-5xl m-auto p-4">
+        <div className="flex max-w-7xl m-auto">
 
                 <div className="p-8">
                     <h1 className="text-2xl text-white font-medium mb-6">Welcome</h1>

@@ -1,5 +1,8 @@
 import React from "react";
 import Link from "next/link";
+import { ConnectWallet } from '@/components/ConnectWallet';
+import Image from 'next/image'
+import logo from '@/assets/images/logo.gif'
 
 export const NavBar = () => {
   return (
@@ -7,10 +10,15 @@ export const NavBar = () => {
       <div className="w-full h-20 bg-slate-950 sticky top-0">
         <div className="container mx-auto px-4 h-full">
           <div className="flex justify-between items-center h-full">
-            <ul className="hidden md:flex gap-x-6 text-white">
+            <ul className="flex gap-x-6 text-white items-center">
               <li>
                 <Link href="/home">
-                  <p>Home</p>
+                <Image
+                    src={logo}
+                    width={60}
+                    height={60}
+                    alt="Picture of the author"
+                />
                 </Link>
               </li>
               <li>
@@ -24,6 +32,7 @@ export const NavBar = () => {
                 </Link>
               </li>
             </ul>
+            <ConnectWallet/>
           </div>
         </div>
       </div>

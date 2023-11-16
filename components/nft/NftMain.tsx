@@ -14,14 +14,13 @@ export const NftMain = () => {
         useContractMetadata(marketplace);
 
     return (
-      
-        <div className="flex max-w-5xl m-auto p-4">
+        <div className="flex max-w-7xl m-auto">
             <div className="p-8">
                 <h1 className="text-2xl text-white font-medium mb-6">
                     Contract Details
                 </h1>{
                         nftMetadataLoading && marketMetadataLoading ? <div>Loading information... </div> :
-                <div className="flex gap-4">
+                <div className="flex gap-4 flex-wrap">
                     {nftMetadataLoading ||
                         (marketMetadataLoading && (
                             <div className="text-center">
