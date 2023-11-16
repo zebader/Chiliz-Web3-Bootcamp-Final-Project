@@ -4,6 +4,7 @@ import {  useContractRead, Proposal } from "@thirdweb-dev/react";
 import {useEffect, useState} from "react";
 import { DaoProposal } from "./DaoProposal";
 import { DaoPropose } from "./DaoPropose";
+import {Title} from "@/components/Title";
 
 export const DaoMain = () => {
     const { vote_contract } = getVoteContract();
@@ -27,11 +28,9 @@ export const DaoMain = () => {
         <>
         
         <div className="flex max-w-7xl m-auto">
-            <div className="p-8">
-                <h1 className="text-2xl text-white font-medium mb-6">
-                    {nameLoading? "":name}
-                </h1>{
-                        proposalsLoading ? <div>Loading information... </div> :
+            <div className="p-8 w-full">
+                <Title title={nameLoading? "":name}/>
+                {proposalsLoading ? <div>Loading information... </div> :
                     <div className="flex flex-col gap-4">
                         <div className="flex gap-4">
                             <div className="text-white text-md">

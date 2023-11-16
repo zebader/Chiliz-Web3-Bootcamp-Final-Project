@@ -3,6 +3,8 @@ import { useWalletDetails } from '@/hooks/useWalletDetails';
 import { formatBalance } from '@/utils/formatBalance';
 import {BalanceCard} from "./BalanceCard"
 import {ChainCard} from "./ChainCard"
+import {Title} from "@/components/Title";
+
 export const HomeMain = () => {
     const { message: tokenMessage, loading: tokenLoading, nativeBalance } = useBalances();
     const { message: walletMessage ,loading: walletLoading, walletDetails } = useWalletDetails();
@@ -10,8 +12,8 @@ export const HomeMain = () => {
     return (
         <div className="flex max-w-7xl m-auto">
 
-                <div className="p-8">
-                    <h1 className="text-2xl text-white font-medium mb-6">Welcome</h1>
+                <div className="p-8 w-full">
+                <Title title="Welcome"/>
                     {
                         tokenLoading || walletLoading ? <div>Loading information... </div>:
                             <div className="flex gap-4">
