@@ -18,6 +18,11 @@ export const NavBar = () => {
                   <p>NFT</p>
                 </Link>
               </li>
+              <li>
+                <Link href="/dao">
+                  <p>DAO</p>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
