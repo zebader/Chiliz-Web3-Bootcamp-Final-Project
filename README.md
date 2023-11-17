@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="#about-the-project">
+    <img src="public/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-## Getting Started
+  <h3 align="center">DVNE - DecentralVote & NFT Explorer</h3>
+</div>
 
-First, run the development server:
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#built-with">Built With</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+  </ol>
+</details>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<!-- ABOUT THE PROJECT -->
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## About The Project
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Welcome to DecentralVote & NFT Explorer, the revolutionary Web3 application that seamlessly combines decentralized voting with a comprehensive NFT collection explorer. Immerse yourself in the world of blockchain technology, where transparency, security, and community engagement converge.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<img src="public/login.png" alt="Logo">
 
-## Learn More
+### Home
 
-To learn more about Next.js, take a look at the following resources:
+In the Home section users can visualize theirs wallet information, balance, transfers, transactions...
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<img src="public/home.png" alt="Logo">
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### NFT
 
-## Deploy on Vercel
+In the NFT section you would be able to check your collections, marketplace and mint new NFT to your collection
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<img src="public/nft.png" alt="Logo">
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### DAO
+
+In the DAO section users would be able to Vote and create proposals
+
+<img src="public/dao.png" alt="Logo">
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Built With
+
+- Next.js 14
+- React 18
+- Tailwind
+- Moralis.io
+- Thirdweb
+- Chiliz
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ROADMAP -->
+
+## Roadmap
+
+- [ ] Refactor logic in components into better hooks
+- [ ] Refactor components creating better presentational ones
+- [ ] Add transfer NFT feature
+- [ ] Add sell NFT feature
+- [ ] Improve NFT marketplace section
+- [ ] Improve DAO section adding more actions and information
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
