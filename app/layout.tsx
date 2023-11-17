@@ -7,7 +7,7 @@ import { NavBar } from '@/components/NavBar';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Final project',
+  title: 'DVNE - DecentralVote & NFT Explorer',
   description: 'Chiliz bootcamp final project',
 }
 

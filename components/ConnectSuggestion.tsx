@@ -10,6 +10,7 @@ export const ConnectSuggestion = () => {
                     height={300}
                     alt="Picture of the author"
                 />
+                <h1 className='text-3xl font-bold'>Welcome to DVNE</h1>
             <p>Please connect to your wallet</p>
             <div className='p-12'>
                 <ConnectWallet />
