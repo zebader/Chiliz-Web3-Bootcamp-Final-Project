@@ -17,9 +17,6 @@ export const NftMain = () => {
     const address = useAddress();
     const { data: ownedNFTs, isLoading: isNftsLoading } = useOwnedNFTs(nft_contract, address);
 
-    console.log(ownedNFTs);
-    
-
     return (
         <div className="flex max-w-7xl m-auto flex-col pb-8">
             <div className="p-8 w-full">
