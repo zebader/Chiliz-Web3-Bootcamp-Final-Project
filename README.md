@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="#about-the-project">
-    <img src="public/logo.png" alt="Logo" width="80" height="80">
+    <img src="public/logo.gif" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">DVNE - DecentralVote & NFT Explorer</h3>
@@ -44,8 +44,6 @@ In the DAO section users would be able to Vote and create proposals
 
 <img src="public/dao.png" alt="Logo">
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## Built With
 
 - Next.js 14
@@ -54,8 +52,6 @@ In the DAO section users would be able to Vote and create proposals
 - Moralis.io
 - Thirdweb
 - Chiliz
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->
 
@@ -67,5 +63,3 @@ In the DAO section users would be able to Vote and create proposals
 - [ ] Add sell NFT feature
 - [ ] Improve NFT marketplace section
 - [ ] Improve DAO section adding more actions and information
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
